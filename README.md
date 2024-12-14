@@ -1,4 +1,3 @@
-````markdown
 # React Router as a Framework: A Complete Tutorial
 
 Welcome to this comprehensive tutorial on using React Router as a full-fledged framework for building modern, data-driven web applications. We will walk through key concepts and APIs in a structured manner, starting from installation and going all the way through custom rendering strategies, data loading, actions, navigation, pending UI states, testing, and more. By the end of this guide, you’ll have a solid understanding of how React Router can streamline your development workflow.
@@ -27,7 +26,6 @@ Most React Router projects start with a template. These templates are maintained
 ```bash
 npx create-react-router@latest my-react-router-app
 ```
-````
 
 Now change into the new directory and start the development server:
 
