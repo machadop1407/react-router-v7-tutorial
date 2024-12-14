@@ -1,3 +1,4 @@
+````markdown
 # React Router as a Framework: A Complete Tutorial
 
 Welcome to this comprehensive tutorial on using React Router as a full-fledged framework for building modern, data-driven web applications. We will walk through key concepts and APIs in a structured manner, starting from installation and going all the way through custom rendering strategies, data loading, actions, navigation, pending UI states, testing, and more. By the end of this guide, you’ll have a solid understanding of how React Router can streamline your development workflow.
@@ -26,7 +27,6 @@ Most React Router projects start with a template. These templates are maintained
 ```bash
 npx create-react-router@latest my-react-router-app
 ```
-
 ````
 
 Now change into the new directory and start the development server:
@@ -45,7 +45,7 @@ For more templates and deployment-ready setups, refer to the official React Rout
 
 ## Routing
 
-**Where do routes live?**
+**Where do routes live?**  
 Routes are defined in `app/routes.ts`. Each route has a URL pattern and a file path that points to its route module (the file defining its logic and UI).
 
 **Basic Example:**
@@ -99,19 +99,19 @@ export default [
 
 The parent route’s `<Outlet />` renders the child routes.
 
-**Root Route:**
+**Root Route:**  
 Every route is nested inside `app/root.tsx`. This special root route can provide global layouts or error boundaries.
 
-**Layout Routes:**
+**Layout Routes:**  
 Layout routes create nesting in the UI without adding to the URL.
 
-**Index Routes:**
+**Index Routes:**  
 `index()` defines a default child route at the parent’s URL.
 
-**Route Prefixes:**
+**Route Prefixes:**  
 `prefix()` can add a path prefix to a set of routes for organization.
 
-**Dynamic Segments:**
+**Dynamic Segments:**  
 Use `:paramName` in the path to define a dynamic URL segment. These values are available in `params` in loaders, actions, and components.
 
 ---
@@ -148,7 +148,7 @@ Nested routes let you build complex layouts. Remember to place `<Outlet />` in t
 
 React Router supports three main strategies:
 
-1. **Client Side Rendering (CSR):**
+1. **Client Side Rendering (CSR):**  
    The entire app runs in the browser.
 
    ```typescript
@@ -158,7 +158,7 @@ React Router supports three main strategies:
    } satisfies Config;
    ```
 
-2. **Server Side Rendering (SSR):**
+2. **Server Side Rendering (SSR):**  
    The initial render happens on the server.
 
    ```typescript
@@ -167,7 +167,7 @@ React Router supports three main strategies:
    } satisfies Config;
    ```
 
-3. **Static Pre-rendering:**
+3. **Static Pre-rendering:**  
    Generate static HTML at build time.
    ```typescript
    export default {
@@ -276,7 +276,7 @@ return (
 );
 ```
 
-**Optimistic UI:**
+**Optimistic UI:**  
 Use the submitted data to immediately update the UI, even before the server responds, for a more responsive feel.
 
 ---
@@ -332,5 +332,3 @@ By following these steps, you’ve learned how to install React Router, configur
 For more tutorials, examples, and in-depth guides, subscribe and check out my [YouTube channel PedroTechnologies](https://www.youtube.com/@pedrotechnologies).
 
 Happy routing!
-
-````
